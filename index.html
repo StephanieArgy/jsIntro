@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>JavaScript &amp; jQuery Example</title>
@@ -53,9 +53,15 @@ $(document).ready(function(){
 $('input[value="Run Script"]').click( function(){
 console.log('Caught a "Run Script" click event.');
 $("#output_area").addClass( 'selected');
-alert("The looping function should go here.");
+loop_and_display();
 });
 // attach an event listener to the Clear button here
+$('input[value="Clear"]').click( function(){
+console.log('Caught a "Clear" click event.');
+$("#output_area").removeClass( 'selected');
+output_html = "<p>Click the Run Script button.</p>";
+$("#output_area").html(output_html);
+});
 }); // end of $(document).ready
 /*
 This function prepares a string variable with HTML and then uses jQuery
@@ -73,6 +79,7 @@ output_html += "<p>The script is done.</p>";
 $("#output_area").html(output_html);
 }
 </script>
+
 </head>
 <body>
 <h1>jQuery modification of the DOM example.</h1>
