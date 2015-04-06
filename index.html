@@ -80,23 +80,25 @@ $("#output_area").html(output_html);
 <h2>Quiz</h2>
 <dl>
 <dt>What is an 'event listener'?</dt>
-<dd>(put your answer here)</dd>
+<dd>An 'event listener' is the favored way of binding an event to an element, meaning that when that event takes place for that element, a specified function's code will run.</dd>
 <dt>How do you attach an event listener that responds to a 'click' event to an element using jQuery?</dt>
-<dd>(put your answer here)</dd>
+<dd><kbd>$( "element" ).event(function() {<br>
+    [Code goes here];<br>
+});</kbd></dd>
 <dt>What is the ID of the place where the output of the loop function should go?</dt>
 <dd>id="output_area"</dd>
 <dt>What is the class that changes the style of the output area?</dt>
-<dd>(put your answer here)</dd>
+<dd>class="idle"</dd>
 <dt>What does the selector input[value="Run Script"] do? Enter the URLs of the places you researched with your explanation.</dt>
-<dd>(put your answer here)</dd>
+<dd>"input" is an HTML form element, used here to tag the "Run Script button" so that it can be used as a selector for jQuery. jQuery can use "input" and the value "Run Script" to identify the element that has to be bound to the click event. Or, in English, it lets jQuery know that when someone clicks on the "Run Script" input, it has to run the requested function.  I found this on: <a href="http://www.w3schools.com/html/html_form_input_types.asp">http://www.w3schools.com/html/html_form_input_types.asp</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input</a></dd>
 <dt>What is the URL of the documentation for the jQuery <kbd>.addClass</kbd> method?</dt>
-<dd>http://api.jquery.com/addClass/</dd>
+<dd><a href="http://api.jquery.com/addClass">http://api.jquery.com/addClass/</a></dd>
 <dt>What is the URL of the documentation for GitHub Pages? What does creating the <kbd>gh-pages</kbd> branch do on github.com</dt>
-<dd>https://help.github.com/categories/github-pages-basics/<br>
+<dd><a href="https://help.github.com/categories/github-pages-basics/">https://help.github.com/categories/github-pages-basics/</a><br>
 Creating a gh-pages branch makes publicly visible and available web pages, hosted and published through GitHub.
 </dd>
 <dt>What is the URL of the documentation for the <kbd>$(document).ready()</kbd> jQuery method?</dt>
-<dd>http://api.jquery.com/ready/</dd>
+<dd><a href="http://api.jquery.com/ready/">http://api.jquery.com/ready/</a></dd>
 
 </dl>
 
